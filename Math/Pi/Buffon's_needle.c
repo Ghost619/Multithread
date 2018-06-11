@@ -1,4 +1,5 @@
 // Coded by ScratchyCode
+// Approximates the pi value with the simulation of Buffon's needle launch, generating events in parallel with threads.
 // Compile with -lm -pthread
 #include <stdio.h>
 #include <stdlib.h>
