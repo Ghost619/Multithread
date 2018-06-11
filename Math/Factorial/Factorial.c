@@ -1,4 +1,5 @@
 // Coded by ScratchyCode
+// Big number factorial with multithread
 // Compile with -lgmp -pthread
 #include <gmp.h>
 #include <stdio.h>
