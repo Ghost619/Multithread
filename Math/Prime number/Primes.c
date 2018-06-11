@@ -1,4 +1,5 @@
 // Coded by ScratchyCode
+// This program performs the Primes optimizations, but split the calculation in half on two threads.
 // Compile in gcc with options -lm -pthread
 #include <stdio.h>
 #include <stdlib.h>
