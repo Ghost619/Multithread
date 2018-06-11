@@ -1,0 +1,9 @@
+Factorial 1000000! without thread:
+real    4m33,963s
+user    4m33,884s
+sys     0m0,024s
+
+Factorial 1000000! with thread:
+real    0m39,746s
+user    1m6,348s
+sys     0m0,016s
