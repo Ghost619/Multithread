@@ -1,4 +1,5 @@
 // Coded by ScratchyCode
+// This program simulates the decay of N particles moving at relativistic speeds using threads.
 // Compile in gcc with options -lm -pthread
 /*
 *REFERENCE VALUES*
