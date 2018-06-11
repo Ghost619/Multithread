@@ -78,7 +78,7 @@ int main(){
     double average, min, max;
     statistics(matrix,SIMULATIONS,&average,&min,&max);
         
-    printf("\nAverage:\t%lf",average);
+    printf("\nMean:\t%lf",average);
     printf("\nMin:\t%lf",min);
     printf("\nMax:\t%lf\n",max);
     
