@@ -37,18 +37,18 @@ int main(){
     printf("\aCalculation in progress, please wait...\n");
     
     // copying the thread arguments into the structure
-	struct arguments thread_argument;
-	thread_argument.dim = dim+1;
-	thread_argument.lim = lim;
-	thread_argument.vect2 = vect2;
+    struct arguments thread_argument;
+    thread_argument.dim = dim+1;
+    thread_argument.lim = lim;
+    thread_argument.vect2 = vect2;
     
     // running threadFunction parallel to the main
-	pthread_create(&thread,NULL,threadFunction,&thread_argument);
+    pthread_create(&thread,NULL,threadFunction,&thread_argument);
     
     // perform the primality checks
     for(i=3; i<=dim; i++){
-	    if(i%2 == 0){
-	        // exclusion of even numbers
+        if(i%2 == 0){
+            // exclusion of even numbers
             continue;
         }else{
             if(test(i)){
@@ -70,7 +70,7 @@ int main(){
 	    perror("\nError");
         exit(1);
     }
-
+    
     fprintf(fp,"1\n2\n3\n");
     
     for(i=0; i<index; i++){
@@ -84,7 +84,7 @@ int main(){
     fclose(fp);
     free(vect1);
     free(vect2);
-
+    
     return 0;
 }
 
@@ -99,7 +99,7 @@ void *threadFunction(void *parameters){
     // perform the primality checks
     for(i=num; i<=lim; i++){
 	    if(i%2 == 0){
-	        // exclusion of even numbers
+            // exclusion of even numbers
             continue;
         }else{
             if(test(i)){
@@ -110,8 +110,8 @@ void *threadFunction(void *parameters){
     }
     
     data->index = index;
-	
-	return NULL;
+    
+    return NULL;
 }
 
 int test(unsigned long long int num){
