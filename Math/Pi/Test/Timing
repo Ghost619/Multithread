@@ -1,0 +1,9 @@
+Without thread:
+    real	1m24,321s
+    user	1m24,320s
+    sys	0m0,000s
+
+With thread:
+    real	0m41,926s
+    user	0m41,920s
+    sys	0m0,004s
